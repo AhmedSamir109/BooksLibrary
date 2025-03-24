@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="shortcut icon" href="imgs/png-clipart-scalable-graphics-book-library-icon-book-text-comic-book.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="bookLibrary"> <i class="fa-solid fa-book-open"></i> Book Library</h1>
+
+    <section  id="booksNumInputSec" class="">
+
+        <div id="initialInput">
+        
+            <label for="numberOfBooks">Number of books : </label>
+            <input type="number" name="books-num" id="numberOfBooks" min="1">
+            <span class="booksNumError error hide"></span>
+
+            <button id="booksNumBtn">Enter</button>
+        </div>
+
+    </section>
+
+    <section id="booksInputDetails" class="hide">
+        <form action="">
+            <h3 id="book-count">Add Book [ 1 of 3 ]  </h3>
+
+            <div class="form-group">
+                <label for="bookName">Book Name :</label>
+                <input type="text" name="book-name" id="bookName">
+            </div>
+            <span class="bookNameError error hide"></span>
+
+            <div class="form-group">
+                <label for="bookPrice">Price :</label>
+                <input type="text" name="price" id="bookPrice">
+            </div>
+            <span class="priceError error hide"></span>
+
+
+            <div class="form-group">
+                <label for="AuthName">Author Name :</label>
+                <input type="text" name="AuthName" id="AuthName">
+            </div>
+            <span class="authNameError error hide"></span>
+
+
+            <div class="form-group">
+                <label for="AuthMail">Author Mail :</label>
+                <input type="text" name="AuthMail" id="AuthMail">
+            </div>
+            <span class="authMailError error hide"></span>
+
+
+            <button type="submit" id="bookDetailsBtn">Add Book</button>
+        </form>
+    </section>
+
+    <section id="booksTable" class="hide">
+       
+       <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Price</th>
+                        <th>Author Name</th>
+                        <th>Author Mail</th>
+                        <th colspan="2">Action</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td>book</td>
+                        <td>100</td>
+                        <td>ahmed</td>
+                        <td>ahmed@gmail.com</td>
+                        <td><i class="fa-solid fa-pen-to-square edit"></i>   <i class="fa-regular fa-circle-check done hide"></i> </td>
+                        <td><i class="fa-solid fa-trash delete"></i></td>
+                    </tr>
+                    <tr>
+                        <td>book</td>
+                        <td>100</td>
+                        <td>ahmed</td>
+                        <td>ahmed@gmail.com</td>
+                        <td><i class="fa-solid fa-pen-to-square edit"></i>   <i class="fa-regular fa-circle-check done hide"></i> </td>
+                        <td><i class="fa-solid fa-trash delete"></i></td>
+                    </tr>
+                    <tr>
+                        <td>book</td>
+                        <td>100</td>
+                        <td>ahmed</td>
+                        <td>ahmed@gmail.com</td>
+                        <td><i class="fa-solid fa-pen-to-square edit"></i>   <i class="fa-regular fa-circle-check done hide"></i> </td>
+                        <td><i class="fa-solid fa-trash delete"></i></td>
+                    </tr> -->
+                </tbody>
+            </table>
+       </div>
+
+    </section>
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>

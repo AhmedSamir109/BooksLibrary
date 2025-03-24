@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none !important;
+    transition: 0.5s;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 2px 2px 4px blueviolet;
+}
+
+button{
+    width: 50%;
+    margin: 40px auto 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+    background-color: rgb(243,244,246);
+
+}
+
+#bookLibrary{
+    margin: 60px;
+}
+
+#booksNumInputSec , #booksInputDetails , #booksTable{
+    width: 100%;
+    min-height: 60vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+
+}
+
+#initialInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 50px ;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(62, 62, 62);
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+} 
+
+#initialInput input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(209,213,219);
+    border-radius: 8px;
+}
+
+
+#booksInputDetails form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centert;
+    padding: 50px 80px ;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(62, 62, 62);
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+}
+
+#book-count{
+    margin-bottom: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-group input{
+    width: 75%;
+    padding: 10px;
+    border: 1px solid rgb(209,213,219);
+    border-radius: 8px;
+}
+
+
+.table-container{
+    padding: 40px;
+    min-width: 55%;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+#booksTable table{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+#booksTable thead th {
+    background-color: rgb(243,244,246);
+    color: rgb(107,114,128);
+    padding: 20px;
+    
+}
+
+#booksTable tbody td {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-bottom: 1px solid rgb(107,114,128);
+
+}
+
+.edit{
+    padding: 8px;
+    background-color: rgb(171, 224, 63);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.done{
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: green;
+
+}
+
+.cancel{
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: red;
+
+}
+
+.delete{
+    padding: 8px;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.edit:hover , .delete:hover , .done:hover , .cancel:hover{
+    transform: scale(1.06);
+}
+
+.error{
+    width: 75%;
+    text-align: center;
+    margin: 12px auto 5px ;
+    /* background-color: bisque; */
+    color: red;
+    border-radius: 8px;
+}
+
+.table-input{
+    padding: 10px;
+    border: 1px solid rgb(209,213,219);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.table-error{
+    display: block;
+    text-align: center;
+    margin: 12px auto 5px ;
+    /* background-color: bisque; */
+    color: red;
+    border-radius: 8px;
+}
